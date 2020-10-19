@@ -16,7 +16,9 @@ export default class Button extends Component {
     this.props.orange ? "orange" : "",
     this.props.gray ? "gray" : "",
     this.props.black ? "black" : "",
-    this.props.wide ? "wide" : ""];
+    this.props.wide ? "wide" : "",
+    this.props.memo ? "memo" : ""];
+
 
     return (
       <div className={className.join(" ").trim()}>

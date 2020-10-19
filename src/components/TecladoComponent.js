@@ -14,6 +14,11 @@ export default class TecladoComponent extends Component {
         return (
             <div className="teclado-component">
                 
+                <Button name="MC" clickHandler={this.handleClick} orange/>
+                <Button name="MR" clickHandler={this.handleClick} orange/>
+                <Button name="M+" clickHandler={this.handleClick} orange/>
+                <Button name="MS" clickHandler={this.handleClick} orange/><br/>
+
                 <Button name="7" clickHandler={this.handleClick} gray/>
                 <Button name="8" clickHandler={this.handleClick} gray/>
                 <Button name="9" clickHandler={this.handleClick} gray/>

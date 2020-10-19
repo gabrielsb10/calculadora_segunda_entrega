@@ -6,17 +6,17 @@
 .component-button {
   color: white;
   display: inline-flex;
+  min-width: 50px;
   width: 25%;
   height: 16%;
   flex: 1 0 auto;
   font-size: 6vh;
-  border-color: black;
 }
 
 .component-button button {
   background-color: #e0e0e0;
   border: 1px;
-  border-color: #000;
+  outline: black;
   font-size: 1.5rem;
   margin: 1px 1px 1px 1px;
   flex: 1 0 auto;
@@ -27,22 +27,24 @@
   width: 100%;
 }
 
+.component-button.memo{
+  width: 50%;
+  height: 100%;
+}
+
 .component-button.orange button{
   background-color: #f5923e;
   color: white;
-  border-color: black;
 }
 
 .component-button.gray button{
   background-color: #5d5e5e;
   color: white;
-  border-color: black;
 }
 
 .component-button.black button{
   background-color: #434343;
   color: white;
-  border-color: black;
 }
 
 .component-button:focus {
@@ -53,21 +55,74 @@
   opacity: 0.5;
 }
 
-.calculadora {
-  min-width: 300px;
-  width: 30%;
-  margin-left: 35%;
+.calculadoramemo-container{
+  margin-left: 5%;
   margin-top: 7.5%;
-  height: 100vh;
+  min-width: 700px;
+  display: flex;
+  flex-direction: row;
+}
+
+.calculadora-container {
+  min-width: 200px;
+  min-height: 400px;
+  width: 50%;
+  height: 70vh;
   display: block;
+}
+
+.memoria-container {
+  min-width: 200px;
+  min-height: 400px;
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  outline: 1px solid black;
+}
+
+.memoria-display{
+  margin-top: 25%;
+  min-width: 200px;
+  min-height: 100px;
+  height: 50%;
+  width: 100%;
+  background-color: white;
+  font-size: 1em;
+  color: black;
+  display: grid;
+  justify-content: right;
+  justify-items: right;
+  grid-template-rows: repeat(4,1fr);
+  padding: 15px;
+  outline: 1px solid black;
+}
+
+.memoria-teclado{
+  margin-top: 25%;
+  min-width: 200px;
+  min-height: 100px;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+}
+
+.tecmemo-component{
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(4,1fr);
 }
 
 .display-component {
   height: 10%;
   background-color: #323232;
-  font-size: 5vh;
+  font-size: 1.5em;
   color: white;
   display: flex;
   align-items: flex-end;
   flex-direction: column-reverse;
+  padding: 15px;
 }
